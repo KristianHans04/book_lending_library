@@ -1,0 +1,9 @@
+<%= form_with(url: borrow_book_path(@book), method: :post, local: true) do |form| %>
+    <div>
+      <%= form.label :borrower_name, 'Borrower Name' %>
+      <%= form.text_field :borrower_name %>
+    </div>
+    <div>
+      <%= form.submit 'Borrow' %>
+    </div>
+  <% end %>
