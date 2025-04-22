@@ -191,7 +191,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions or suggestions, feel free to reach out:
 
-- GitHub: [Your GitHub Profile](https://github.com/KristianHans04)
+- GitHub: [KristianHans04](https://github.com/KristianHans04)
 - Email: hello@kristianhans.com
 
 ---
