@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get "borrowings/create"
-  get "borrowings/return"
+  post "borrowings/create"
+  post "borrowings/return"
   get "books/index"
   get "books/show"
   get "books/new"
@@ -11,11 +11,11 @@ Rails.application.routes.draw do
 
   resources :books do
     member do
-      get 'borrow'
-      post 'return'
+      get "borrow"
+      post "return"
     end
   end
-  resources :borrowings, only: [:index]
-  
+  resources :borrowings, only: [ :index ]
+
   get "up" => "rails/health#show", as: :rails_health_check
 end

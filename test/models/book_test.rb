@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class BookTest < ActiveSupport::TestCase
   test "should not save book without title" do

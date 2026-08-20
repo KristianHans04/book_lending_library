@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class BooksControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
@@ -12,7 +12,7 @@ class BooksControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create book" do
-    assert_difference('Book.count') do
+    assert_difference("Book.count") do
       post books_url, params: { book: { title: "New Book", author: "Author", genre: "Genre" } }
     end
 
@@ -39,7 +39,7 @@ class BooksControllerTest < ActionDispatch::IntegrationTest
 
   test "should destroy book" do
     book = books(:one)
-    assert_difference('Book.count', -1) do
+    assert_difference("Book.count", -1) do
       delete book_url(book)
     end
 
